@@ -1,0 +1,5 @@
+var a;
+function alert1(){
+    a=document.getElementById('first').value+' ' +document.getElementById('last').value;
+    alert("Hello"+" "+a);
+}

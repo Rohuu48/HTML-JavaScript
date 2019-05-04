@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <script src="calcu.js"></script>
+    <style>
+        
+        .calculator {
+            
+            width: 300px;
+            height: 350px;
+            border-radius: 10px;
+            
+            
+            
+            
+        }
+        .button{
+            width:60px;
+            height:60px;
+            font-size: 50;
+           
+
+        }
+        .textbox{
+            text-align: right;
+            margin: 10px 5px 10 px 5 px;
+            height: 60px;
+            width: 250px;
+        }
+    </style>
+</head>
+<body>
+        <div class="calculator" name="Calc">
+                
+                <h1>Simple Calculator</h1>
+                <input type="text" name="Input" id="textbox" class="textbox">
+        <div> 
+        <table>
+            <tr>
+                <td><input class="button" type="button" value="%" id="%" onclick="disp('%')"></button></td>
+                <td><input class="button" type="button" value="√" id="sqrt" onclick="sq()"></button></td>
+                <td><input class="button" type="button" value="^" id="^" onclick="disp('^')"></button></td>
+                <td><input class="button" type="button" value="1/x" id="reci" onclick="rec()"></button></td>
+            </tr>
+        </table>
+        <table>
+                <tr>
+                        <td>    <button id="CE" style="height:60px;width:60px" onclick="clean()" >CE</button></td>
+                        <td>    <button id="back" style="width:124px;height:60px" onclick="back1()">Backspace</button></td>
+                        <td>    <button id="/" style="width:60px;height:60px" onclick="disp('/')">/</button></td>
+                </tr>
+        </table>
+        <table>    
+            <tr>
+                <td><input class="button" type="button" value="7" id="7" onclick="disp(7)"></button></td>
+                <td><input class="button" type="button" value="8" id="8" onclick="disp(8)"></button></td>
+                <td><input class="button" type="button" value="9" id="9" onclick="disp(9)"></button></td>
+                <td><input class="button" type="button" value="*" id="*" onclick="disp('*')"></button></td>
+            </tr>
+            <tr>
+                <td><input class="button" type="button" value="4" id="4" onclick="disp(4)"></button></td>
+                <td><input class="button" type="button" value="5" id="5" onclick="disp(5)"></button></td>
+                <td><input class="button" type="button" value="6" id="6" onclick="disp(6)"></button></td>
+                <td><input class="button" type="button" value="-" id="-" onclick="disp('-')"></button></td>
+            </tr>
+            <tr>
+                <td><input class="button" type="button" value="1" id="1" onclick="disp(1)"></button></td>
+                <td><input class="button" type="button" value="2" id="2" onclick="disp(2)"></button></td>
+                <td><input class="button" type="button" value="3" id="3" onclick="disp(3)"></button></td>
+                <td><input class="button" type="button" value="+" id="+" onclick="disp('+')"></button></td>
+            </tr>
+        </table>
+        <table>
+                <tr>
+                        <td>    <button id="0" style="height:60px;width:124px" onclick="disp(0)">0</button></td>
+                        <td>    <button id="." style="width:60px;height:60px" onclick="disp('.')">.</button></td>
+                        <td>    <button id="=" style="width:60px;height:60px" onclick="answer()">=</button></td>
+                </tr>
+        </table>
+    </div>
+    </div>
